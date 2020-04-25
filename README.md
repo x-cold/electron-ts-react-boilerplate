@@ -1,5 +1,9 @@
 # electron-template
 
+## 技术栈
+
+Electron v8.x + Typescript + React
+
 ## 本地开发
 
 `npm run dev`

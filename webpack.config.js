@@ -93,7 +93,7 @@ const mainConfig = getConfig({
   target: 'electron-main',
 });
 
-if (process.env.ELECTRON_START === '1') {
+if (isDev) {
   mainConfig.plugins.push({
     apply: compiler => {
       compiler.hooks.afterEmit.tap('AfterEmitPlugin', () => {

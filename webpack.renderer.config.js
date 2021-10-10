@@ -15,45 +15,10 @@ let babelConfig = {
   loader: 'babel-loader',
   options: {
     presets: [
-      [
-        '@babel/preset-env',
-        {
-          modules: false,
-          useBuiltIns: false
-        }
-      ],
+      '@babel/preset-env',
       '@babel/preset-react'
     ],
     plugins: [
-      [
-        '@babel/plugin-proposal-decorators',
-        {
-          legacy: true
-        }
-      ],
-      [
-        '@babel/plugin-proposal-class-properties',
-        {
-          loose: true
-        }
-      ],
-      '@babel/plugin-proposal-object-rest-spread',
-      '@babel/plugin-proposal-optional-catch-binding',
-      '@babel/plugin-proposal-async-generator-functions',
-      '@babel/plugin-proposal-export-namespace-from',
-      '@babel/plugin-proposal-export-default-from',
-      '@babel/plugin-proposal-nullish-coalescing-operator',
-      '@babel/plugin-proposal-optional-chaining',
-      [
-        '@babel/plugin-proposal-pipeline-operator',
-        {
-          proposal: 'minimal'
-        }
-      ],
-      '@babel/plugin-proposal-do-expressions',
-      '@babel/plugin-proposal-function-bind',
-      '@babel/plugin-syntax-dynamic-import',
-      '@babel/plugin-syntax-jsx',
       [
         '@babel/plugin-transform-runtime',
         {

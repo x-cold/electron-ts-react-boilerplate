@@ -217,3 +217,5 @@ common_build
 /log/
 
 package-lock.json
+
+packed/

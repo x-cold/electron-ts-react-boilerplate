@@ -80,7 +80,7 @@ const mainConfig = getConfig({
         from: 'package.json',
         to: 'package.json'
       }, {
-        from: 'statics',
+        from: './statics/',
         to: 'statics'
       }
     ]),

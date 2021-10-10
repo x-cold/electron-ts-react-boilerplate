@@ -1,16 +1,49 @@
-# electron-template
+# electron-ts-react-boilerplate
 
-## 技术栈
+A brief starter for developing electron applications.
 
-Electron v8.x + Typescript + React
+### Dependencies
 
-## 本地开发
+- Electron v15
+- React v17
+- TypeScript v4
 
-`npm run dev`
+### Usage
 
-本地会同时开启 renderer 和 electron 的进程，并且会监听 src/ 下的文件变化自动重启。
+- Clone the boilerplate to your folder
 
-## 调试主进程
+```bash
+git clone git@github.com:x-cold/electron-ts-react-boilerplate.git YOURFOLDERNAME
+cd YOURFOLDERNAME
+```
 
-VSCODE 的调试工具已打通，直接快捷键 F5 即可启动。
+- Install dependencies
 
+```bash
+npm install
+```
+
+- Development
+
+```bash
+# After running this command, it will automatically start renderer and electron process as well as restart when any files in 'src/**' changed.
+npm run dev
+
+# If you want to debug main process, you can start via debug mode by type F5 or run the following command
+# npm run debug
+```
+
+### Features
+
+- [x] Intergrates the latest version of React, Electron, TypeScripts
+- [x] Basic directory and engineering structure
+- [x] It's very easy to start developing your application
+- [ ] Build Mac / Windows / Linux packages
+- [ ] Software signification
+
+### NPM scripts
+
+ - `npm run dev`: Start to develop your application in
+ - `npm run debug`: Debug the electron-main process
+ - `npm run build`: Build renderer and electron-main 
+ - `npm run pack`: Rebuild and release application packages
